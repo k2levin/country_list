@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Country List</title>
+    <title>Country List 2</title>
 
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -40,17 +40,15 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th class="text-center">#</th>
                             <th class="text-center">Code</th>
                             <th class="text-center">Name</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {{#each country}}
+                        {{#each data}}
                         <tr>
-                            <td class="text-center">{{keyPlusOne @key}}</td>
-                            <td class="text-center">{{code}}</td>
-                            <td class="text-center">{{name}}</td>
+                            <td class="text-center">{{@key}}</td>
+                            <td class="text-center">{{this}}</td>
                         </tr>
                         {{/each}}
                     </tbody>
@@ -67,7 +65,7 @@
             var templateCompiled1 = Handlebars.compile(template1);
 
             $.ajax({
-                url: "countries.json",
+                url: "countries2.json",
                 type: "GET",
                 dataType: "json",
                 async: false,
@@ -76,11 +74,7 @@
                 }
             });
 
-            Handlebars.registerHelper("keyPlusOne", function(key) {
-                return key += 1;
-            });
-
-            var theCompiledHtml = templateCompiled1(data);
+            var theCompiledHtml = templateCompiled1({data});
             $('.content-placeholder').html(theCompiledHtml);
         });
     </script>
