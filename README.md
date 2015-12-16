@@ -1,2 +1,2 @@
 ## country_list
-handlebarsjs demo with ajax calling json
+handlebarsjs demo using ajax calling json
