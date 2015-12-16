@@ -1,0 +1,19 @@
+{
+  "name": "country_list",
+  "version": "1.0.0",
+  "description": "handlebarsjs demo using ajax calling json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k2levin/country_list.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k2levin/country_list/issues"
+  },
+  "homepage": "https://github.com/k2levin/country_list#readme"
+}
