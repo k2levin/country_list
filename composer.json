@@ -1,0 +1,11 @@
+{
+    "name": "k2levin/country_list",
+    "description": "handlebarsjs demo using ajax calling json",
+    "authors": [
+        {
+            "name": "Kevin Khew",
+            "email": "k2leving@gmail.com"
+        }
+    ],
+    "require": {}
+}
